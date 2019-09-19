@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+body {
+	/*
+    background-image: url(../img/login/bg.jpg) ;
+    */
+	
+}
+
+div {
+	white-space: nowrap;
+}
+
+.nav {
+	background-color: white;
+	position: absolute;
+	height: 2.5cm;
+	width: 100%;
+}
+
+.header-nav {
+	float: left;
+}
+
+.plane {
+	position: absolute;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#left-wrap {
+	position: absolute;
+	float: left;
+	border-style: groove;
+	top: 3cm
+}
+
+#login-wrap {
+	float: right;
+	background-image: url(../img/login/bg.jpg);
+	position: absolute;
+	top: 3cm;
+	left: 21cm;
+	height: 80%;
+	width: 50%;
+	border-style: groove;
+}
+
+#login-text {
+	position: absolute;
+	left: 2cm;
+	top: 0.2cm;
+}
+
+#login-text span {
+	font-size: 50px;
+}
+
+.account-form {
+	float: left;
+	position: absolute;
+	top: 20%;
+	left: 17.5%;
+	height: 50%;
+	width: 65%;
+	padding: 1cm;
+	background-color: aquamarine;
+}
+
+.input-field {
+	height: 12px;
+	width: 7cm;
+	padding: 10px;
+	margin: 5px;
+	border-style: groove;
+}
+
+#submit-rigist a {
+	float: right;
+}
+
+.hrlist {
+	float: left;
+}
+
+.hrlist li {
+	display: inline;
+}
+
+#submit {
+	height: 1cm;
+	width: 3cm;
+	margin-right: 2cm;
+}
+
+#logo {
+	position: absolute;
+	float: left;
+	width: 5cm;
+	height: 2.5cm;
+}
+
+#codeImage {
+	margin: 5px;
+	height: 50px;
+	width: 150px;
+}
+
+#left {
+	height: 15.2cm;
+	width: 20cm;
+}

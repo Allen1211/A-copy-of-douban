@@ -1,0 +1,281 @@
+
+.nav {
+	margin-bottom: 40px;
+}
+
+#main{
+	width: 1300px;
+	margin-left: 250px;
+	margin-right: 200px;
+
+}
+
+.content , .aside {
+	display: inline-block;
+	vertical-align: top;
+}
+.content {
+	width: 800px;
+}
+
+.fri-mine-wrap {
+	width: 720px;
+	white-space: nowrap;
+}
+
+.fri-mine ul {
+	
+	margin-left: 50px;
+	margin-right: 50px;
+	list-style-type: none;
+}
+
+.fri-mine ul li {
+	display: inline;
+	padding-right: 50px;
+}
+.fri-mine ul li a{
+	font-size: 40px;
+	height: 30px;
+	width: 40px;
+	margin-right: 30px;
+}
+.fri-mine ul li a:link,.fri-mine ul li a:visited{
+	width: 200px;
+	font-weight: bold;
+	color:black;
+	background-color: #bebebe;
+}
+.fri-mine ul li a:hover,.fri-mine ul li a:active {
+	background-color:#cc0000;
+}
+.artitle-pre {
+	width: 760px;
+}
+.pre-user {
+	white-space: nowrap;
+}
+
+.pre-user div{
+	display: inline-block;
+
+}
+
+.pre-user-nameNdo {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.pre-user-nameNdo a {
+
+	font-size: 20px;
+}
+.pre-user-img {
+	float: left;
+}
+
+.pre-user-img img{
+	height: 60px;
+}
+
+.pre-article {
+	margin-left: 20px;
+	background-color: #E8E7E3;
+}
+.pre-forw-artitle {
+	margin-left: 60px;
+	background-color: #E8E7E3;	
+}
+.pre-p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.pre-forw-text {
+	margin-left: 20px;
+}
+
+.pagination {
+	text-align: center;
+}
+
+.aside {
+	margin: 20px;
+	width: 400px;
+}
+
+.user-info {
+	background-color: #FFF6ED;
+	white-space: nowrap;
+}
+.user-info-wrap {
+	background-color: #FFF6ED;
+	white-space: nowrap;
+}
+.user-info div{
+	display: inline-block;
+	vertical-align: top;
+}
+#info-image {
+	padding: 20px;
+	width: 150px;
+	height: 150px;
+}
+
+#info-image img{
+	width: 150px;
+	height: 150px;
+}
+
+#info-text {
+	width: 200px;
+	padding-top: 20px;
+}
+#info-text span{
+	padding-right: 20px;
+	
+}
+#info-text ul{
+	list-style-type: none;
+	margin-top: 5px;
+	padding-left: 5px;
+}
+
+#info-text ul li{
+	padding-bottom: 10px ;
+}
+
+
+#user-desc,#edit-user,#user-info {
+	background-color: #FFF6ED;
+}
+
+#desc {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+#desc blockquote{
+	font-style: normal;
+	font-size: 15px;
+	white-space: pre-wrap;
+}
+#edit-user {
+
+}
+#edit-user a{
+	font-size: 20px;
+	margin-left: 75%;
+}
+
+.my-collect h2 {
+	display: inline-block;
+	margin-bottom: 0px;
+}
+.my-collect ul {
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.my-collect ul li {
+	background-color: beige;
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+
+.collect-title {
+	font-size: 20px;
+	font-style: initial;
+}
+
+.info-edit-wrap {
+	position: absolute;
+	top: 0px;
+	height: 700px;
+	width: 550px;
+	margin-top: 100px;
+	margin-left: 500px;
+	margin-right: 100px;
+	background-color: darkgrey;
+	display: none;
+	cursor: pointer;
+	z-index: 3;
+}
+
+#hidebg {
+	position: absolute;
+	top: 0px;
+	background-color: whitesmoke;
+	width: 100%;
+	opacity: 0.6;
+	display: none;
+}
+
+#info-edit {
+	margin-left: 100px;
+	margin-right: 50px;
+	margin-top: 50px;
+	white-space: nowrap;
+}
+.edit-desc-label {
+	font-size: 20px;
+	padding-right: 15px;
+}
+.edit-form-row {
+	vertical-align: top;
+	padding-bottom: 30px;
+}
+.edit-form-row div {
+	display: inline-block;
+}
+.edit-text-field input{
+	width: 230px;
+	height: 30px;
+}
+
+#edit-user-img img {
+	height: 150px;
+	widows: 150px;
+}
+
+#edit-desc {
+	width: 230px;
+	height: 100px;
+}
+#edit-submit {
+	margin-left: 150px;
+	width: 80px;
+
+}
+
+.friend-img{
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+}
+
+.friend-name{
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 20px;
+	font-size: 15px;
+	width: 6em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.btn{
+	margin-left: 20px;
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+	background-color: #C0C0C0;
+	border-width: 0px;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: #BEBEBE;
+}

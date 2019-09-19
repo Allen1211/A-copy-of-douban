@@ -1,0 +1,27 @@
+.my-article {
+	margin-left: 40px;
+	margin-right: 10px;
+	width: 90%;
+	height: auto;
+}
+
+.article-list {
+	
+}
+
+.list {
+	border-style: groove;
+	margin-bottom: 15px;
+}
+
+.my-title {
+	font-size: 25px;
+}
+
+#my-time {
+	padding-right: 350px;
+}
+
+.article-list-action {
+	padding-right: 30px;
+}

@@ -1,0 +1,57 @@
+#main {
+	margin-top: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 1000px;
+}
+
+#all-type-wrap {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#all-type-wrap ul {
+	list-style-type: none;
+}
+
+#all-type-wrap ul li {
+	border-style: outset;
+	border-color: lavender;
+	background-color: lightgrey;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.type-btn {
+	font-size: 25px;
+}
+
+#show {
+	font-size: 30px;
+}
+
+.article-row {
+	background-color: azure;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.row-title {
+	margin-left: 10px;
+}
+
+.user-img {
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+
+.row-footer span {
+	margin-right: 20px;
+}
+
+.pagination {
+	text-align: center;
+}

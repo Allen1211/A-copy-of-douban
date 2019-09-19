@@ -1,0 +1,107 @@
+a:link {
+	text-decoration: none;
+} /* 未被访问的链接 */
+a:visited {
+	text-decoration: none;
+} /* 已被访问的链接 */
+a:hover {
+	text-decoration: underline;
+} /* 鼠标指针移动到链接上 */
+a:active {
+	text-decoration: underline;
+} /* 正在被点击的链接 */
+.nav {
+	height: 80px;
+	margin-bottom: 60px;
+	background-color: #EDF4ED;
+}
+
+#nav-wrap {
+	height: 80px;
+	width: 1200px;
+	position: absolute;
+	left: 16%;
+	white-space: nowrap;
+}
+
+#nav-wrap div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav-logo {
+	height: 80px;
+	width: 200px;
+	margin-right: 0px;
+}
+
+.nav-logo img {
+	height: 80px;
+}
+
+.nav-items {
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 160px;
+}
+
+.nav-items ul {
+	margin: 10px;
+	margin-right: 50px;
+	list-style-type: none;
+	font-size: 28px;
+}
+
+.nav-items ul li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.nav-search {
+	width: 300px;
+	margin-top: 20px;
+	height: 30%;
+	left: 3cm;
+}
+
+#searchText {
+	height: 30px;
+	width: 250px;
+}
+
+#searchButton {
+	height: 30px;
+	width: 50px;
+}
+
+.nav-user {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.nav-user ul {
+	list-style-type: none;
+}
+
+.nav-user ul li {
+	display: inline;
+	margin-right: 15px;
+}
+
+#name-account-scan {
+	width: 3em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.more-items {
+	display: none;
+}
+
+.more-items table {
+	display: none;
+	border-collapse: collapse;
+	font-size: 13px;
+}
