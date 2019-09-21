@@ -1,0 +1,85 @@
+#chat-wrap{
+    height: 600px;
+    width: 700px;
+    margin: 0 auto;
+    background: #B6B6B6;
+    border-style: inset;
+    border-width: 5px;
+}
+#chat-wrap button{
+    height: 40px;
+    width: 80px;
+    border-style: groove;
+    font-size: 15px;
+}
+
+#title {
+    font-size: 32px;
+    padding-top: 5px;
+}
+#title-ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+#title-ul li{
+    display: inline;
+}
+#quit-btn{
+    float: right;
+    margin-right: 30px;
+}
+#send-btn{
+    float: right;
+    margin-top: 50px;
+    margin-right: 40px;
+
+}
+#head-box {
+}
+
+#message-box {
+    background-color: #445985;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: auto;
+}
+#message-ul{
+    list-style: none;
+    padding: 10px;
+}
+#message-ul li{
+    clear: both;
+    width: inherit;
+    margin-top: 10px;
+}
+#message-ul li span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    word-break: break-all;
+}
+.user-head{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+.message {
+    background: #9D9D9D;
+    font-size: 18px;
+    border-style: groove;
+}
+#output-box{
+    width: inherit;
+    height: 110px;
+
+}
+
+#edit-area{
+    height: 80px;
+    width: 500px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: whitesmoke;
+}

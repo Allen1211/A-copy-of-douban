@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html;charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -28,7 +28,7 @@
 						<ul>
 							<li><img
 								src="/douban/getUserImage?userId=${articleData.article.userId }"
-								id="user-img"> <a href="/douban/user?id=" id="name">${articleData.nickname }</a>
+								id="user-img"> <a href="/douban/userpage?userId=${articleData.article.userId}" id="name">${articleData.nickname }</a>
 							</li>
 							<li><span id="date"> 发表于<fmt:formatDate type="date" value="${articleData.article.createdTime } " />&nbsp;&nbsp;&nbsp;
 							最后修改于<fmt:formatDate type="date" value="${articleData.article.updateTime }"/>
@@ -88,7 +88,7 @@
 							<div  class="comment-user-content-wrap">
 								<div  class="comment-user-header">
 									<ul>
-										<li><a href="">${comment.nickname }</a></li>
+										<li><a href="/douban/userpage?userId=${comment.userId}">${comment.nickname }</a></li>
 										<li><span > ${comment.createdTime } </span></li>
 									</ul>
 								</div>
@@ -119,8 +119,8 @@
 												class="reply-user-img">
 										</div>
 										<div  class="reply-target-wrap">
-											<a href="">${reply.fromUserNickname }</a>&nbsp;回复&nbsp;<a
-												href="">${reply.toUserNickname }</a>：
+											<a href="/douban/userpage?userId=${reply.fromUserId}">${reply.fromUserNickname }</a>&nbsp;回复&nbsp;<a
+												href="/douban/userpage?userId=${reply.toUserId}">${reply.toUserNickname }</a>：
 										</div>
 										<div  class="reply-content">
 											<p>${reply.replyText }</p>

@@ -42,10 +42,10 @@ public class DiscoveryController extends HttpServlet {
 		String typeIdStr = request.getParameter("typeId");
 		PageBean pageBean = PageUtil.getPageBean(request);
 		List<DiscoveryArticleBean> data = null;
-		if(typeIdStr != null){
-			data = articleService.findArticleByType(typeIdStr, pageBean);
-		}else{
+		if(typeIdStr == null || typeIdStr.length() == 0){
 			data = articleService.findHitArticle(pageBean);
+		}else{
+			data = articleService.findArticleByType(typeIdStr, pageBean);
 		}
 		List<Type> typeData = typeService.findAllType();
 		if (data == null || typeData == null) {

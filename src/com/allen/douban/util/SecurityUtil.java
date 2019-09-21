@@ -21,4 +21,6 @@ public class SecurityUtil {
 		String pwd_str = Base64.encodeBase64String(pwd);
 		return pwd_str;
 	}
+
+
 }

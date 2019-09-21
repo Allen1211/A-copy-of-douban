@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html;charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
 			<div id="all-type-wrap">
 				<div id="type-nav">
 					<ul>
-						<li><a href="" class="type-btn">热门</a></li>
+						<li><a href="/douban/discovery" class="type-btn">热门</a></li>
 						<c:forEach var="type" items="${TypeList }">
 							<li><a
 								href="/douban/discovery?typeId=${type.typeId }"
@@ -37,7 +37,7 @@
 						<div class="article-row">
 							<div class="author-info">
 								<img src="/douban/getUserImage?userId=${data.authorId }"
-									alt="头像" class="user-img" /> <a href="">${data.authorName }</a>
+									alt="头像" class="user-img" /> <a href="/douban/userpage?userId=${data.authorId }">${data.authorName }</a>
 							</div>
 							<div class="row-title">
 								<a href="/douban/article?articleId=${data.articleId }">

@@ -26,7 +26,6 @@ public class ResultUtil {
 	/**
 	 * 
 	 * @param response
-	 * @param data
 	 * @throws IOException
 	 */
 	public static void successResponse(HttpServletResponse response) throws IOException {
@@ -38,7 +37,6 @@ public class ResultUtil {
 	/**
 	 * 
 	 * @param response
-	 * @param data
 	 * @throws IOException
 	 */
 	public static void failResponse(HttpServletResponse response, Integer code, String msg) throws IOException {

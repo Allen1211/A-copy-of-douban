@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
@@ -43,10 +44,16 @@ public class XSSFilter implements Filter {
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
 		// TODO Auto-generated method stub
-		// place your code here
+		// place your code herq
+		HttpServletRequest httpRequest = (HttpServletRequest) req;
+		if(httpRequest.getRequestURI().contains("chatting")){
+			chain.doFilter(req, res);
+			return;
+		}
 		XssEscapingWrapper request = new XssEscapingWrapper((HttpServletRequest) req);
+		chain.doFilter(request,res);
+
 		// pass the request along the filter chain
-		chain.doFilter(request, res);
 	}
 
 	/**

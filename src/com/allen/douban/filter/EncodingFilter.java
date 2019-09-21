@@ -22,6 +22,10 @@ public class EncodingFilter implements Filter {
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
 			throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) req;
+		if(request.getRequestURI().contains("chatting")){
+			chain.doFilter(req, resp);
+			return;
+		}
 		if (request.getMethod().equals("GET")) {
 			request = new EncordingWrapper(request, "UTF-8");
 		}else {

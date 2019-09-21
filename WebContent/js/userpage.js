@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    longPolling();
     initIsFollowed = $("#follow").attr("data-is-followed");
     if (initIsFollowed == "true") {
         $("#follow").html("已关注");
@@ -7,6 +8,12 @@ $(document).ready(function () {
     }
 
 })
+
+window.onbeforeunload = function(event){
+    var url = "/douban/endWaitForChat";
+    $.get(url, function(data,status){
+    })
+}
 
 function follow() {
     var isFollowed = $("#follow").attr("data-is-followed");
@@ -25,25 +32,14 @@ function follow() {
     $.get(url, function (data, status) {
         window.location.reload();
     })
-    // 	$.ajax({
-    // 		type : "GET",
-    // 		async: false,
-    // 		datatype : "json",
-    // 		url: url,
-    // 		contentType: 'application/json; charset=UTF-8',
-    // 		success : function(data) {
-    // 			if(data.code == 200){
-    // 				window.location.reload()
-    // 			}else{
-    // 				alert(data.msg);
-    // 			}
-    // 		},
-    // 	});
-    // }
 }
 function GetQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
     var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
     if (r != null) return unescape(r[2]);
     return null;
+}
+
+function openchat(){
+
 }

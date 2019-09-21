@@ -1,6 +1,7 @@
 package com.allen.douban.serviceimpl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -123,6 +124,9 @@ public class UserServiceImpl implements UserService {
 		user.setUserPassword(SecurityUtil.encodeMD5(password));
 		user.setUserEmail(email);
 		user.setNickname(nickname);
+		user.setUserStatus(true);
+		user.setUserIsAdmin(false);
+		user.setUserRegistTime(new Date());
 		Msg msg = userDao.addUser(user);
 		// 数据库插入错误
 		if (!msg.isSuccess()) {
@@ -143,7 +147,7 @@ public class UserServiceImpl implements UserService {
 			return new Msg(false,"个人简介不能为空", null);
 		}
 		Pattern p3 = Pattern.compile("^\\w+@{1}\\w+\\.{1}\\w+$"); // 邮箱格式
-		Pattern p4 = Pattern.compile("^.*{1,10}$");
+		Pattern p4 = Pattern.compile("^.\\*{1,10}$");
 		if (!p3.matcher(email).matches()) {
 			return new Msg(false,"请输入合法的邮箱", null);
 		}

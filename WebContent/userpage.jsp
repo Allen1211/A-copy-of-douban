@@ -15,12 +15,14 @@
     <script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/editjs.js" type="text/javascript"></script>
     <script src="js/userpage.js" type="text/javascript"></script>
+    <script src="js/waitForChat.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/indexHeader.css"/>
     <link rel="stylesheet" type="text/css" href="css/userpage.css"/>
     <title>豆瓣</title>
 </head>
 <body>
 <div id="container">
+    <input type="hidden" id="user-id" data-user-id="${user.user.userId}"/>
     <div id="main">
         <%@ include file="header.jsp" %>
         <div id="content" class="content">
@@ -51,6 +53,7 @@
                     <c:otherwise>
                         <div id="follow-user">
                             <button id="follow" class="btn" onclick="follow();return false;" data-is-followed="${isMyFriend}">关注</button>
+                            <a href="/douban/requireChat?receiverId=${pageUser.userId}">私聊</a>
                         </div>
                     </c:otherwise>
                 </c:choose>
@@ -65,7 +68,7 @@
                 <div id="collect" class="my-collect">
                     <c:choose>
                         <c:when test="${isMyPage==true}">
-                            <h2>${user.user.userName}的关注&nbsp;&nbsp;&nbsp;-------------------</h2>
+                            <h2>${user.user.nickname}的关注&nbsp;&nbsp;&nbsp;-------------------</h2>
                         </c:when>
                         <c:otherwise>
                             <h2>关注Ta的人&nbsp;&nbsp;&nbsp;-------------------</h2>

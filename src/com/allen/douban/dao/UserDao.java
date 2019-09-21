@@ -21,7 +21,7 @@ public class UserDao extends BaseDao {
 
 	public Msg addUser(User user) {
 		String sql = "INSERT INTO user(user_name,user_password,user_email,nickname,"
-				+ "user_status,user_is_admin,user_image,user_desc,user_regist_time) " + "Values(?,?,?,?,?,?,?,?,?)";
+				+ "user_status,user_is_admin,user_regist_time) " + "Values(?,?,?,?,?,?,?)";
 		List<Object> params = new ArrayList<>();
 		params.add(user.getUserName());
 		params.add(user.getUserPassword());
@@ -29,8 +29,6 @@ public class UserDao extends BaseDao {
 		params.add(user.getNickname());
 		params.add(user.getUserStatus());
 		params.add(user.getUserIsAdmin());
-		params.add(user.getUserImage());
-		params.add(user.getUserDesc());
 		params.add(user.getUserRegistTime());
 		try {
 			update(sql, params);

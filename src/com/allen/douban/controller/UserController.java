@@ -3,6 +3,8 @@ package com.allen.douban.controller;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -135,7 +137,13 @@ public class UserController extends HttpServlet {
 		}
 		int userId = userBean.getUser().getUserId();
 		String param = request.getParameter("userId");
-		int requireId = Integer.parseInt(request.getParameter("userId"));
+		String requireIdStr = request.getParameter("userId");
+        int requireId;  // 请求参数中的Id
+        if(requireIdStr == null || requireIdStr.length() == 0){
+		    requireId = userId;
+        }else{
+		    requireId = Integer.parseInt(requireIdStr);
+        }
 		Msg msg;
 		User pageUser;
 		boolean isMyPage;
